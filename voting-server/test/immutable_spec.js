@@ -1,5 +1,6 @@
 import { expect } from "chai";
-import { List, Map } from "immutable";
+import immutable from "immutable";
+const { List, Map } = immutable;
 describe("immutability", () => {
   describe("a number", () => {
     function getState(currentState) {
@@ -23,7 +24,7 @@ describe("immutability", () => {
       let currentState = Map({
         movies: List.of("Transporting", "28 days later"),
       });
-      let movie = "Ghost in the cell";
+      let movie = "Ghost in the Cell";
       const nextstate = addMovies(currentState, movie);
 
       expect(nextstate).to.equal(

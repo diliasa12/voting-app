@@ -7,7 +7,7 @@
     "#*": "./src/*"
   },
   "scripts": {
-    "test": "mocha --require ./test/test_helper.js  --recursive",
+    "test": "mocha --require ./test/core_spec.js  --recursive",
     "test:watch": "npm run test -- --watch"
   },
   "keywords": [],
